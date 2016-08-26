@@ -4,6 +4,7 @@ FROM ubuntu:14.04
 MAINTAINER docker_user wangkangluo1@gmail.com
 
 # Commands to update the image
-RUN apt-get update && apt-get install -y software-properties-common && add-apt-repository ppa:git-core/ppa && apt-get update && apt-get install -y git tmux wget unzip
+RUN apt-get update && apt-get install -y software-properties-common && add-apt-repository ppa:git-core/ppa && apt-get update
+RUN apt-get install -y git tmux wget unzip
 
 # Commands when creating a new container
